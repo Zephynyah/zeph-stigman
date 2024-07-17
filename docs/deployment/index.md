@@ -1,0 +1,13 @@
+# Installation Steps
+The recommended instantiation steps are as follows: 
+
+1. [Assumptions](./assumptions.md)
+2. [Install Dependencies](./dependencies.md)
+3. [Install & Configure MySQL](./mysql.md)
+4. [Install & Configure Keycloak](keycloak.md)
+5. [Install & Configure STIG Manager](stigman.md)
+6. [Install & Configure NGINX](nginx.md)
+7. [Deploy with TLS](deploy.md)
+8. [Reboot](reboot.md)
+
+

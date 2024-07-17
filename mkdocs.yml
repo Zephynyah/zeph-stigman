@@ -1,0 +1,117 @@
+site_name: GSC STIG Manager
+site_url: https://zephynyah.github.io/zeph-stigman
+site_author: Jason Hickey
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of STIG Manager project - customizable, searchable and mobile-friendly
+
+# repo_url: https://github.com/Zephynyah/zeph-opensll-certificate-authority
+
+nav:
+  - Home: index.md
+  - About:
+    - about/index.md
+    - Release Notes: 'about/release-notes.md'
+    - Contributing: about/contributing.md
+    - License: 'about/license.md'
+  - Deployment:
+    # - guides/index.md
+    - deployment/index.md
+    - Assumptions : deployment/assumptions.md
+    - Install Dependencies : deployment/dependencies.md
+    - MySQL : deployment/mysql.md
+    - Keycloak : deployment/keycloak.md
+    - Stigman : deployment/stigman.md
+    - Nginx : deployment/nginx.md
+    - Deploy with TLS : deployment/deploy.md
+    - Reboot : deployment/reboot.md
+  - Appendix:
+    - appendix/index.md
+    - Root CA Configuration File: appendix/root-configuration.md
+    - Intermediate CA Configuration File: appendix/intermediate-configuration.md
+theme:
+  name: readthedocs
+  name: material
+  # custom_dir: material/overrides
+  features:
+    - toc.follow
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - announce.dismiss
+    - navigation.indexes
+    - navigation.footer
+    - navigation.path
+  language: en
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+      text: Roboto
+      code: Roboto Mono
+    # favicon: assets/favicon.png
+    # icon:
+    #   logo: logo
+plugins:
+  - social
+  - search
+  # - markdownextradata
+
+markdown_extensions:
+  - toc:
+      title: "ZEPH"
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  version: 0.1.1
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Zephynyah
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+
+copyright: |
