@@ -9,7 +9,7 @@ title: Installing & Configuring Keycloak
 2. [Create a Systemd Unit File for Keycloak](#creating-a-systemd-unit-file-for-keycloak)
 3. [Create a Symbolic Link (symlink) Folder](#create-a-symbolic-link-symlink-folder)
 4. [Enable Keycloak Service on System Startup](#enable-keycloak-service-on-system-startup)
-5. [Create the First Administrator From Command Line](#creating-the-first-administrator-from-commandline)
+5. [Create the First Administrator From Command Line](#creating-the-first-administrator-from-command-line)
 6. [Login and Using the Admin Console](#login-and-using-the-admin-console)
 7. [Import STIG Manager Realm Template](#importing-the-stig-manager-realm-template)
 8. [Start keycloak As a Service](#start-keycloak-as-a-service)

@@ -8,8 +8,10 @@ with a capability to be also used as reverse proxy, load balancer, mail proxy an
 ## Steps
 1. [Install Nginx](#install-nginx)
 2. [Enable HTTPS SSL support on Nginx](#enable-https-ssl-support-on-nginx)
-3. [Generate SSL Keys and Certificates](#generate-ssl-keys-and-certificates)
-4. [Open HTTPS and HTTP ports (443 and 80)](#open-https-and-http-ports-443-and-80)
+3. [Create PKI directory for Keys and Certificates](#create-pki-directory-for-keys-and-certificates)
+4. [Generate SSL CA Keys and Certificates](#generate-ssl-ca-keys-and-certificates)
+5. [Generate SSL Server Keys and Certificates](#generate-ssl-server-keys-and-certificates)
+6. [Open HTTPS and HTTP ports (443 and 80)](#open-https-and-http-ports-443-and-80)
 
 ---
 ## Install Nginx
@@ -119,7 +121,7 @@ server {
 
 ```
 
-## Generate SSL Keys and Certificates
+## Create PKI directory for Keys and Certificates
 Create a directory to hold the SSL certificate and the private key for the Nginx server.
 
 !!! info
@@ -140,6 +142,11 @@ sudo mkdir -p /opt/pki
 cd /opt/pki
 ```
 
+## Generate SSL CA Keys and Certificates
+
+!!! note
+    Skip the two step below if you already have a a signing certificate step if you 
+
 Execute the below command to generate CA's private key and self-signed certificate
 ``` sh
 
@@ -155,6 +162,9 @@ Execute the below command to  create the CA's self-signed certificate:
 ``` sh
 openssl x509 -in ca-cert.pem -noout -text
 ```
+
+
+## Generate SSL Server Keys and Certificates
 
 Execute the below command to generate web server's private key and certificate signing request (CSR)
 ``` sh
@@ -225,7 +235,9 @@ Open the browser and paste the URL or navigate to [{{ server.ssl }}]({{ server.s
 !!! success annotate "Summary"
     In these procedures, on a RHEL 7/8 distributions, you have:
 
-    * Installed Nginx
+    * Installed and enabled Nginx
     * Enabled HTTPS SSL support on Nginx
-    * Generated SSL Keys and Certificates
+    * Created PKI directory for Keys and Certificates
+    * Generated SSL CA Keys and Certificates
+    * Generated SSL Server Keys and Certificates
     * Opened HTTPS and HTTP ports (443 and 80)

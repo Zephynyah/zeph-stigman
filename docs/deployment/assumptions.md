@@ -14,3 +14,10 @@
 -  The server hostname is: `{{ server.hostname }}`
 -  Realm name is: `{{ realm.name }}`
 -  User is logged in as a user with root privileges on the system.
+
+## Summary
+!!! success annotate "Summary"
+    In these section, you have:
+    
+    * Read all the Assumptions 
+    * Read the Installation Steps

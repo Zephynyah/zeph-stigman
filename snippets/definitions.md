@@ -1,1 +1,1 @@
-The unit price is {{ page.meta.unit.price }}
+<!-- The unit price is {{ page.meta.unit.price }} -->

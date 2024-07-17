@@ -27,8 +27,6 @@ nav:
     - Reboot : deployment/reboot.md
   - Appendix:
     - appendix/index.md
-    - Root CA Configuration File: appendix/root-configuration.md
-    - Intermediate CA Configuration File: appendix/intermediate-configuration.md
 theme:
   name: readthedocs
   name: material
@@ -116,8 +114,6 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
-  unit:
-    price: 12.50
   server:
     hostname: eh-stigman-1
     ipaddress: 192.168.100.119
@@ -144,7 +140,7 @@ extra:
     https: https://eh-stigman-1
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/Zephynyah
+      link: https://github.com/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/
     - icon: fontawesome/brands/linkedin
@@ -154,4 +150,5 @@ extra_css:
 extra_javascript:
   - javascripts/extra.js
 
-# copyright: |
+copyright: |
+  &copy; Copyright 2023 <a href="https://github.com/zephynyah"  target="_blank" rel="noopener">Jason Hickey</a>

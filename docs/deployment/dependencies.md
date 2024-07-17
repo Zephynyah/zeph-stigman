@@ -1,12 +1,12 @@
 # Dependencies
 
 ## Steps
-1. [Installing openjdk using dnf](#Installing openjdk using dnf)
-2. [Open Ports Temporarily for STIG Manager & keycloak](#Open Ports Temporarily for STIG Manager & keycloak)
+1. [Installing Openjdk Using dnf](#installing-openjdk-using-dnf)
+2. [Open Ports for STIG Manager & keycloak (Temporary)](#open-ports-for-stig-manager-and-keycloak-temporary)
 
 
 ----
-## Installing openjdk using dnf
+## Installing Openjdk Using dnf
 You can install Red Hat build of OpenJDK Java Runtime Environment (JRE) using the system package manager, dnf.
 
 Run the yum command, specifying the package you want to install:
@@ -45,7 +45,7 @@ Enter to keep the current selection[+], or type selection number:
 ```
 
 
-## Open Ports Temporarily for STIG Manager & keycloak
+## Open Ports for STIG Manager and keycloak (Temporary)
 !!! note
     If the firewall is not running skip this step.
 
@@ -112,8 +112,6 @@ public (active)
 !!! success annotate "Summary"
     In these section, you have:
 
-    * Read all the Assumptions 
-    * Read the Installation Steps
     * Installed openjdk using dnf
     * Opened ports Temporary for stig-manager & keycloak
 
