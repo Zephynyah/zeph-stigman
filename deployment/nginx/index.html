@@ -329,7 +329,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../appendix/index.md" class="md-tabs__link">
+        <a href="../../appendix/" class="md-tabs__link">
           
   
     
@@ -805,9 +805,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generate-ssl-keys-and-certificates" class="md-nav__link">
+  <a href="#create-pki-directory-for-keys-and-certificates" class="md-nav__link">
     <span class="md-ellipsis">
-      Generate SSL Keys and Certificates
+      Create PKI directory for Keys and Certificates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-ssl-ca-keys-and-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate SSL CA Keys and Certificates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-ssl-server-keys-and-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate SSL Server Keys and Certificates
     </span>
   </a>
   
@@ -899,9 +917,7 @@
     
       
         
-      
-        
-      
+          
         
       
     
@@ -919,16 +935,19 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../appendix/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Appendix
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
@@ -937,67 +956,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../appendix/index.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    None
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../appendix/root-configuration.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Root CA Configuration File
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../appendix/intermediate-configuration.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Intermediate CA Configuration File
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -1039,7 +997,9 @@ with a capability to be also used as reverse proxy, load balancer, mail proxy an
 <ol>
 <li><a href="#install-nginx">Install Nginx</a></li>
 <li><a href="#enable-https-ssl-support-on-nginx">Enable HTTPS SSL support on Nginx</a></li>
-<li><a href="#generate-ssl-keys-and-certificates">Generate SSL Keys and Certificates</a></li>
+<li><a href="#create-pki-directory-for-keys-and-certificates">Create PKI directory for Keys and Certificates</a></li>
+<li><a href="#generate-ssl-ca-keys-and-certificates">Generate SSL CA Keys and Certificates</a></li>
+<li><a href="#generate-ssl-server-keys-and-certificates">Generate SSL Server Keys and Certificates</a></li>
 <li><a href="#open-https-and-http-ports-443-and-80">Open HTTPS and HTTP ports (443 and 80)</a></li>
 </ol>
 <hr />
@@ -1130,7 +1090,7 @@ with a capability to be also used as reverse proxy, load balancer, mail proxy an
 <a id="__codelineno-8-47" name="__codelineno-8-47" href="#__codelineno-8-47"></a><span class="go">    }</span>
 <a id="__codelineno-8-48" name="__codelineno-8-48" href="#__codelineno-8-48"></a><span class="go">}</span>
 </code></pre></div>
-<h2 id="generate-ssl-keys-and-certificates">Generate SSL Keys and Certificates</h2>
+<h2 id="create-pki-directory-for-keys-and-certificates">Create PKI directory for Keys and Certificates</h2>
 <p>Create a directory to hold the SSL certificate and the private key for the Nginx server.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1144,6 +1104,11 @@ with a capability to be also used as reverse proxy, load balancer, mail proxy an
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>/opt/pki
 </code></pre></div>
+<h2 id="generate-ssl-ca-keys-and-certificates">Generate SSL CA Keys and Certificates</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Skip the two step below if you already have a a signing certificate step if you </p>
+</div>
 <p>Execute the below command to generate CA's private key and self-signed certificate
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="w">  </span>openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span><span class="se">\</span>
@@ -1155,6 +1120,7 @@ with a capability to be also used as reverse proxy, load balancer, mail proxy an
 <p>Execute the below command to  create the CA's self-signed certificate:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>openssl<span class="w"> </span>x509<span class="w"> </span>-in<span class="w"> </span>ca-cert.pem<span class="w"> </span>-noout<span class="w"> </span>-text
 </code></pre></div></p>
+<h2 id="generate-ssl-server-keys-and-certificates">Generate SSL Server Keys and Certificates</h2>
 <p>Execute the below command to generate web server's private key and certificate signing request (CSR)
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>openssl<span class="w"> </span>req<span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span>-keyout<span class="w"> </span>server-key.pem<span class="w"> </span><span class="se">\</span>
@@ -1205,9 +1171,11 @@ Open the browser and paste the URL or navigate to <a href="{{ no such element: d
 <p class="admonition-title">Summary</p>
 <p>In these procedures, on a RHEL 7/8 distributions, you have:</p>
 <ul>
-<li>Installed Nginx</li>
+<li>Installed and enabled Nginx</li>
 <li>Enabled HTTPS SSL support on Nginx</li>
-<li>Generated SSL Keys and Certificates</li>
+<li>Created PKI directory for Keys and Certificates</li>
+<li>Generated SSL CA Keys and Certificates</li>
+<li>Generated SSL Server Keys and Certificates</li>
 <li>Opened HTTPS and HTTP ports (443 and 80)</li>
 </ul>
 </div>
@@ -1290,6 +1258,10 @@ Open the browser and paste the URL or navigate to <a href="{{ no such element: d
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      &copy; Copyright 2023 <a href="https://github.com/zephynyah"  target="_blank" rel="noopener">Jason Hickey</a>
+    </div>
+  
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
@@ -1307,7 +1279,7 @@ Open the browser and paste the URL or navigate to <a href="{{ no such element: d
       
       
     
-    <a href="https://github.com/Zephynyah" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
     </a>
   
