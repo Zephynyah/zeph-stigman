@@ -1,23 +1,20 @@
-
-
 # Installing & Configuring STIG Manager
 
-To install STIG Manager, use the following procedure. 
 !!! info
     STIG Manager binaries are made available [with each release.](https://github.com/NUWCDIVNPT/stig-manager/releases)
 
-## Procedures
-* Extract STIG Manager Server
-* Create a systemd Unit File for stigman
-* Create a symbolic link (symlink) folder.
-* Enable SIG Manager service on system startup
-* Configure STIG Manager
+## Steps
+1. [Extract STIG Manager Server](#extract-stig-manager-application)
+2. [Create a systemd Unit File for stigman](#creating-a-systemd-unit-file-for-stigman)
+3. [Create a symbolic link (symlink) folder](#create-a-symbolic-link-symlink-folder)
+4. [Enable SIG Manager service on system startup](#enable-stigman-service-on-system-startup)
+5. [Configure STIG Manager](#configure-stig-manager)
 
 ## Extract STIG Manager Application
 We are going to install STIG Manager to `/opt/` directory, so we will extract the 
 STIG Manager package to that location. 
 
-Execute the below commands to move to the `/opt` derectory:
+Execute the below commands to move to the `/opt` directory:
 ```sh
 cd /opt/
 ```
@@ -37,22 +34,22 @@ Copy systemd unit file (`stigman.service`) under `/opt/deployment/stigman/script
     More information bout system D files can be found here. [systemd Unit Files](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_systemd_unit_files_to_customize_and_optimize_your_system/assembly_working-with-systemd-unit-files_working-with-systemd#ref_important-service-section-options_assembly_working-with-systemd-unit-files)
 
 Execute the below commands to move to `../systemd/` deployment directory:
-```sh
+``` sh
 cd /opt/deployment/stigman/scripts/systemd/
 ```
 
 Execute the below commands to copy the file:
-```sh
+``` sh
 sudo cp ./stigman.service /etc/systemd/system/stigman.service
 ```
 
 Execute the below commands to view contents of the file. Exit the editor when done.
-```sh
+``` sh
 nano /etc/systemd/system/stigman.service
 ```
 
 Below is the content of the `stigman.service` file
-```sh
+``` sh
 [Unit]
 Description=The STIG Manager Application Server
 After=syslog.target network.target
@@ -98,7 +95,7 @@ filesystem but with different names.
 
 Execute the below commands to create the symlink for stig-manager:
 
-```sh
+``` sh
 sudo ln -s /opt/stig-manager-{{ stigman.version }} /opt/stig-manager
 ```
 
@@ -123,22 +120,22 @@ drwxr-xr-x. 2 root     root       61 Jul  7 16:55 stig-manager-1.4.11
 ---
 ## Enable stigman service on system startup
 Reload systemd manager configuration 
-``` bash
+``` sh
 sudo systemctl daemon-reload
 ```
 
 Execute the below commands to start the service:
-``` bash
+``` sh
 sudo systemctl start stigman
 ```
 
 Execute the below commands to check the status of the service:
-``` bash
+``` sh
 sudo systemctl status stigman
 ```
 
 Execute the below commands to enable the service on system startup:
-``` bash
+``` sh
 sudo systemctl enable stigman
 ```
 
@@ -148,7 +145,7 @@ tail -f /var/log/stig-manager.log
 ```
 
 Execute the below commands to stop the service:
-``` bash
+```sh
 sudo systemctl stop stigman
 ```
 
@@ -161,7 +158,7 @@ Execute the below commands to edit stig-manager environment variables file.
 sudo nano /opt/stig-manager-{{ stigman.version }}/stig-manager.sh
 ```
 
-```sh title=" stig-manager.sh Before"
+``` sh title=" stig-manager.sh Before"
 # export STIGMAN_CLASSIFICATION=
 ...
 # export STIGMAN_DB_PASSWORD=
@@ -172,7 +169,7 @@ sudo nano /opt/stig-manager-{{ stigman.version }}/stig-manager.sh
 ```
 
 Un-comment the following variable and update their values:
-```sh title="stig-manager.sh After"
+``` sh title="stig-manager.sh After"
 export STIGMAN_CLASSIFICATION=C
 ...
 export STIGMAN_DB_PASSWORD=Password123!
@@ -184,10 +181,9 @@ export STIGMAN_OIDC_PROVIDER=http://localhost:8080/realms/stigman
 
 
 Execute the below commands to restart service:
-``` bash
+``` sh
 sudo systemctl restart stigman.service
 ```
-
 
 ## Summary
 !!! success annotate "Summary"
@@ -198,6 +194,3 @@ sudo systemctl restart stigman.service
     * Created a symbolic link (symlink) folder.
     * Enabled SIG Manager service on system startup
     * Configured STIG Manager
-
-## Next Step
-[Install NGINX](nginx.md)

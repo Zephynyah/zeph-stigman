@@ -1,5 +1,10 @@
 # Dependencies
 
+## Steps
+1. [Installing openjdk using dnf](#Installing openjdk using dnf)
+2. [Open Ports Temporarily for STIG Manager & keycloak](#Open Ports Temporarily for STIG Manager & keycloak)
+
+
 ----
 ## Installing openjdk using dnf
 You can install Red Hat build of OpenJDK Java Runtime Environment (JRE) using the system package manager, dnf.
@@ -62,12 +67,12 @@ running
 
 Execute the below commands to add port 8080 rule for keycloak: 
 ```sh
-firewall-cmd --zone=public --add-port=8080/tcp 
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
 ```
 
 Execute the below commands to add port 54000 rule for stig-manager: 
 ```sh
-firewall-cmd --zone=public --add-port=54000/tcp
+firewall-cmd --zone=public --add-port=54000/tcp --permanent
 ```
 
 Execute the below commands to reload the firewall service: 
@@ -112,5 +117,3 @@ public (active)
     * Installed openjdk using dnf
     * Opened ports Temporary for stig-manager & keycloak
 
-## Next Step
-[Installing & Configuring MySQL](mysql.md)

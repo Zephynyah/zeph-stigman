@@ -5,14 +5,14 @@ title: Installing & Configuring Keycloak
 # Installing & Configuring Keycloak
 
 ## Procedures
-* Extract Keycloak Server
-* Create a systemd Unit File for Keycloak
-* Create a symbolic link (symlink) folder.
-* Enable keycloak service on system startup
-* Create the first administrator from command line.
-* Login into and using the Admin Console
-* Import the Realm Template
-* Run keycloak Service 
+1. [Extract Keycloak Server](#extract-keycloak-server)
+2. [Create a Systemd Unit File for Keycloak](#creating-a-systemd-unit-file-for-keycloak)
+3. [Create a Symbolic Link (symlink) Folder](#create-a-symbolic-link-symlink-folder)
+4. [Enable Keycloak Service on System Startup](#enable-keycloak-service-on-system-startup)
+5. [Create the First Administrator From Command Line](#creating-the-first-administrator-from-commandline)
+6. [Login and Using the Admin Console](#login-and-using-the-admin-console)
+7. [Import STIG Manager Realm Template](#importing-the-stig-manager-realm-template)
+8. [Start keycloak As a Service](#start-keycloak-as-a-service)
 
 ## Extract Keycloak Server
 We are going to install Keycloak to `/opt/` directory, so we will copy/or extract the 
@@ -134,7 +134,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/keycloak.service →
 ```
 
 ---
-## Creating the first administrator from commandline.
+## Creating the first administrator from command line.
 !!! info
     After installing Keycloak, you need an administrator account that can act as a super admin with full 
     permissions to manage Keycloak. With this account, you can log in to the Keycloak Admin Console where 
@@ -260,6 +260,3 @@ Use these steps to create the first realm form Admin console.
     * Created the first administrator from command line.
     * Started keycloak as a Service.
     * Log into the Admin Console and import a realm template.
-   
-## Next Step
-[STIG Manager Deployment with Precompiled Binaries](stigman.md)

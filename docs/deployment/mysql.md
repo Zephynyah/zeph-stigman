@@ -1,16 +1,13 @@
----
-title: Installing & Configuring MySQL
----
-
 # Installing & Configuring MySQL
 To install MySQL, use the following procedure. 
 
-## Procesures
-* Install the MySQL Server 
-* Created the STIG Manager MySQL Database.
-* Set the suggested DB configuration options in a MySQ.
-* Change the default MySQL data directory.
-* Set SELinux security context for the new data directory
+## Steps
+1. [Install the MySQL Server](#install-the-mysql-server)
+2. [Create MySQL and STIG Manager user](#create-mysql-and-stig-manager-user)
+3. [Configure MySQL for STIG Manager](#configure-mysql-for-stig-manager)
+4. [Change the default MySQL data directory](#changing-the-default-mysql-data-directory)
+5. [Set SELinux security context for the new data directory](#set-selinux-security-context-to-data-directory)
+6. [(Optional) Create a Database to Confirm Data Directory](#optional-create-a-database-to-confirm-data-directory)
 
 ## Install the MySQL Server 
 Install MySQL server packages: 
@@ -53,7 +50,7 @@ database tables, views, and static data will be created. Example
 commands to prepare MySQL for initial API execution:
 
 !!! note
-    All database commands has end with a semi-colon `;` after loging in and exiting.
+    All database commands has end with a semi-colon `;` except logins in and exiting.
 
 Login to the database: 
 ```sh
@@ -183,7 +180,7 @@ Save and close the file when done, then restart MySQL
 ```sh
 sudo systemctl restart mysqld.service
 ```
-Perform the instauctions in `Step 2` to validate the values have changed.
+Perform the instructions in `Step 2` to validate the values have changed.
 ```sh title="sort_buffer_size"
 +------------------+----------+
 | Variable_name    | Value    |
@@ -213,7 +210,7 @@ default data directory (`/var/lib/mysql`) to a different location. This director
 grow due to high usage. 
 
 !!! warning
-    GSC recomends changing the default for the following reasons:
+    GSC recommends changing the default for the following reasons:
 
     The filesystem where `/var` is stored may collapse at one point causing the entire system to fail. 
 
@@ -226,7 +223,7 @@ For these reason we will change the default MySQL data directory to a different 
     that this directory should be owned by `mysql:mysql`.
 
 
-Create the new directory if it does not exist by running the folloing command:
+Execute the below commands to create the new directory if it does not exist:
 ```sh
 sudo mkdir -p /data/mysql 
 sudo chown -R mysql:mysql /data/mysql
@@ -236,7 +233,7 @@ sudo chown -R mysql:mysql /data/mysql
     To begin, it is worthy and well to identify the current data directory using the following command. 
     Do not just assume it is still `/var/lib/mysql` since it could have been changed in the past.
 
-Execute the below commands to dentifying the Current MySQL Data Directory by 
+Execute the below commands to identify the current MySQL Data directory:
 ```sh
 sudo mysql -u root -p -e "SELECT @@datadir;"
 ```
@@ -393,10 +390,6 @@ mysql -u root -p -e "DROP DATABASE gsctest;"
 Both commands are expected to return an "ok" message.
 
 ---
-## Extra
-Extra configuration/deployment scenarios can be found in `Extra - MySQL` section
-
-
 ## Summary
 !!! success annotate "Summary"
     In these procedures, on a RHEL 7/8 distributions, you have:
@@ -406,6 +399,3 @@ Extra configuration/deployment scenarios can be found in `Extra - MySQL` section
     * Set the suggested DB configuration options in a MySQ.
     * Change the default MySQL data directory.
     * Set SELinux security context for the new data directory
-
-## Next Step
-[Installing & Configuring Keycloak](keycloak.md)

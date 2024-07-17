@@ -1,10 +1,9 @@
 #  Deploy with TLS
 
-## Procedures
-* Configure the Reverse Proxy
-* Allow Keycloak to Communicate Through the Proxy
-* Allow STIG Manager to Communicate with Keycloak
-* Fix STIG Manager ServiceWorker.js Error
+## Steps
+1. [Configure the Reverse Proxy](#configure-the-reverse-proxy)
+2. [Allow Keycloak to Communicate Through the Proxy](#allow-keycloak-to-communicate-through-the-proxy)
+3. [Allow STIG Manager to Communicate with Keycloak](#allow-stig-manager-to-communicate-with-keycloak)
 
 
 ## Configure the Reverse Proxy
@@ -91,16 +90,16 @@ sudo systemctl restart keycloak.service
 
 Access the Keycloak sign-in page.
 
-* Open browser and paste the URL or navigate to [https://{{ server.ipaddress}}](https://{{ server.ipaddress}}) URL.
+* Open browser and paste the URL or navigate to [{{ server.https }}]({{ server.https}}) URL.
 * Login with the Admin user name and password created earlier.
 * All setting and Reals should still be accessible and unchanged.
 
 ## Allow STIG Manager to Communicate with Keycloak.
 
-Open browser and paste the url or navigate to [https://{{ server.ipaddress}}/stigman](https://{{ server.ipaddress}}/stigman) URL.
+Open browser and paste the url or navigate to [{{ server.https }}/stigman]({{ server.https }}/stigman) URL.
 
 <figure markdown="span">
-  ![Image title](img/stigman-nginx.png){ width="500" }
+  ![Image title](./img/stigman-nginx.png){ width="500" }
 </figure>
 
 !!! info
@@ -128,7 +127,7 @@ sudo nano /opt/stig-manager/stig-manager.sh
 #
 #  Affects: Client
 #==============================================================================
-export STIGMAN_CLIENT_OIDC_PROVIDER=https://{{ server.ipaddress }}/realms/stigman
+export STIGMAN_CLIENT_OIDC_PROVIDER={{ server.https }}/realms/stigman
 ...
 ```
 
@@ -139,26 +138,13 @@ Execute the below commands restart STIG Manager:
 sudo systemctl restart stigman.service
 ```
 
-Open browser and paste the url or navigate to [https://{{ server.ipaddress}}/stigman](https://{{ server.ipaddress}}/stigman) URL.
-
-
-##  Fix STIG Manager ServiceWorker.js Error
-
-<figure markdown="span">
-  ![Image title](img/stigman-ssl.png){ width="500" }
-</figure>
-
-
-
+Open browser and paste the url or navigate to [{{ server.https }}/stigman]({{ server.https }}/stigman) URL.
 
 ## Summary
 !!! success annotate "Summary"
     In these procedures, on a RHEL 7/8 distributions, you have:
 
-    * Configure the Reverse Proxy
-    * Allow Keycloak to Communicate Through the Proxy
-    * Allow STIG Manager to Communicate with Keycloak
-    * Fix STIG Manager ServiceWorker.js Error
-
-## Next Step
-[Perform a Reboot](reboot.md)
+    * Configured the Reverse Proxy
+    * Allowed Keycloak to Communicate Through the Proxy
+    * Allowed STIG Manager to Communicate with Keycloak
+    * Fixed STIG Manager ServiceWorker.js Error
