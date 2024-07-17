@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.76a95c52.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -87,7 +87,16 @@
       
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -114,10 +123,6 @@
     <div data-md-component="announce">
       
     </div>
-    
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
     
     
       
@@ -231,6 +236,18 @@
   </div>
 </div>
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Zephynyah/zeph-stigman" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -357,6 +374,18 @@
     </a>
     GSC STIG Manager
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Zephynyah/zeph-stigman" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -756,7 +785,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="ZEPH">
+<nav class="md-nav md-nav--secondary" aria-label="GSC STIG Manager">
   
   
   
@@ -765,14 +794,14 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      ZEPH
+      GSC STIG Manager
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#procedures" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Procedures
+      Steps
     </span>
   </a>
   
@@ -806,27 +835,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fix-stig-manager-serviceworkerjs-error" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix STIG Manager ServiceWorker.js Error
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Step
     </span>
   </a>
   
@@ -1001,24 +1012,30 @@
                 
                   
 
+  
+    <a href="https://github.com/Zephynyah/zeph-stigman/edit/master/docs/deployment/deploy.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
 
 <h1 id="deploy-with-tls">Deploy with TLS</h1>
-<h2 id="procedures">Procedures</h2>
-<ul>
-<li>Configure the Reverse Proxy</li>
-<li>Allow Keycloak to Communicate Through the Proxy</li>
-<li>Allow STIG Manager to Communicate with Keycloak</li>
-<li>Fix STIG Manager ServiceWorker.js Error</li>
-</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li><a href="#configure-the-reverse-proxy">Configure the Reverse Proxy</a></li>
+<li><a href="#allow-keycloak-to-communicate-through-the-proxy">Allow Keycloak to Communicate Through the Proxy</a></li>
+<li><a href="#allow-stig-manager-to-communicate-with-keycloak">Allow STIG Manager to Communicate with Keycloak</a></li>
+</ol>
 <h2 id="configure-the-reverse-proxy">Configure the Reverse Proxy</h2>
 <p>To support HTTPS connections, STIG Manager components should be situated behind a reverse proxy. 
 Configure the reverse proxy (such as nginx) in accordance with publisher documentation, 
 local security requirements, and Keycloak documentation. In either case, you will have to set
 Keycloak environment variable <code>PROXY_ADDRESS_FORWARDING=true</code> and make sure appropriate headers are forwarded.</p>
-<figure markdown="span">
-  ![Image title](img/component-diagram1.svg){ width="450" }
+<figure>
+  <a class="glightbox" href="../img/component-diagram1.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../img/component-diagram1.svg" width="450" /></a>
 </figure>
-
 <h2 id="allow-keycloak-to-communicate-through-the-proxy">Allow Keycloak to Communicate Through the Proxy.</h2>
 <p>Execute the below command to edit the keycloak unit file.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/opt/keycloak/conf/keycloak.conf
@@ -1083,16 +1100,15 @@ Keycloak environment variable <code>PROXY_ADDRESS_FORWARDING=true</code> and mak
 </div>
 <p>Access the Keycloak sign-in page.</p>
 <ul>
-<li>Open browser and paste the URL or navigate to <a href="https://{{ server.ipaddress}}">https://{{ server.ipaddress}}</a> URL.</li>
+<li>Open browser and paste the URL or navigate to <a href="https://eh-stigman-1">https://eh-stigman-1</a> URL.</li>
 <li>Login with the Admin user name and password created earlier.</li>
 <li>All setting and Reals should still be accessible and unchanged.</li>
 </ul>
 <h2 id="allow-stig-manager-to-communicate-with-keycloak">Allow STIG Manager to Communicate with Keycloak.</h2>
-<p>Open browser and paste the url or navigate to <a href="https://{{ server.ipaddress}}/stigman">https://{{ server.ipaddress}}/stigman</a> URL.</p>
-<figure markdown="span">
-  ![Image title](img/stigman-nginx.png){ width="500" }
+<p>Open browser and paste the url or navigate to <a href="https://eh-stigman-1/stigman">https://eh-stigman-1/stigman</a> URL.</p>
+<figure>
+  <a class="glightbox" href="../img/stigman-nginx.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../img/stigman-nginx.png" width="500" /></a>
 </figure>
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>STIG Manger will not communicate with keycloak because nginx. </p>
@@ -1116,32 +1132,25 @@ Keycloak environment variable <code>PROXY_ADDRESS_FORWARDING=true</code> and mak
 <a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="gp">#</span>
 <a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="gp">#  </span>Affects:<span class="w"> </span><span class="nv">Client</span>
 <a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="gp">#</span><span class="o">==============================================================================</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="go">export STIGMAN_CLIENT_OIDC_PROVIDER=https://{{ server.ipaddress }}/realms/stigman</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="go">export STIGMAN_CLIENT_OIDC_PROVIDER=https://eh-stigman-1/realms/stigman</span>
 <a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="go">...</span>
 </code></pre></div>
 <p>Save and exit.</p>
 <p>Execute the below commands restart STIG Manager:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>stigman.service
 </code></pre></div></p>
-<p>Open browser and paste the url or navigate to <a href="https://{{ server.ipaddress}}/stigman">https://{{ server.ipaddress}}/stigman</a> URL.</p>
-<h2 id="fix-stig-manager-serviceworkerjs-error">Fix STIG Manager ServiceWorker.js Error</h2>
-<figure markdown="span">
-  ![Image title](img/stigman-ssl.png){ width="500" }
-</figure>
-
+<p>Open browser and paste the url or navigate to <a href="https://eh-stigman-1/stigman">https://eh-stigman-1/stigman</a> URL.</p>
 <h2 id="summary">Summary</h2>
 <div class="admonition success annotate">
 <p class="admonition-title">Summary</p>
 <p>In these procedures, on a RHEL 7/8 distributions, you have:</p>
 <ul>
-<li>Configure the Reverse Proxy</li>
-<li>Allow Keycloak to Communicate Through the Proxy</li>
-<li>Allow STIG Manager to Communicate with Keycloak</li>
-<li>Fix STIG Manager ServiceWorker.js Error</li>
+<li>Configured the Reverse Proxy</li>
+<li>Allowed Keycloak to Communicate Through the Proxy</li>
+<li>Allowed STIG Manager to Communicate with Keycloak</li>
+<li>Fixed STIG Manager ServiceWorker.js Error</li>
 </ul>
 </div>
-<h2 id="next-step">Next Step</h2>
-<p><a href="../reboot/">Perform a Reboot</a></p>
 
 
 
@@ -1276,7 +1285,7 @@ Keycloak environment variable <code>PROXY_ADDRESS_FORWARDING=true</code> and mak
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.action.edit", "content.code.annotation", "content.code.copy", "content.tabs.link", "content.tooltips", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.path"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.1.1"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.action.edit", "content.code.annotation", "content.code.copy", "content.tabs.link", "content.tooltips", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.path"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
@@ -1284,5 +1293,7 @@ Keycloak environment variable <code>PROXY_ADDRESS_FORWARDING=true</code> and mak
         <script src="../../javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

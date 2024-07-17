@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.76a95c52.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -87,7 +87,16 @@
       
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -114,10 +123,6 @@
     <div data-md-component="announce">
       
     </div>
-    
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
     
     
       
@@ -231,6 +236,18 @@
   </div>
 </div>
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Zephynyah/zeph-stigman" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -357,6 +374,18 @@
     </a>
     GSC STIG Manager
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Zephynyah/zeph-stigman" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -735,7 +764,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="ZEPH">
+<nav class="md-nav md-nav--secondary" aria-label="GSC STIG Manager">
   
   
   
@@ -744,41 +773,59 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      ZEPH
+      GSC STIG Manager
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#procedures" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Procedures
+      Steps
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-nginx-on-rhel-78" class="md-nav__link">
+  <a href="#install-nginx" class="md-nav__link">
     <span class="md-ellipsis">
-      Install nginx on RHEL 7/8
+      Install Nginx
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#enable-https-ssl-support-on-nginx-and-rhel-8" class="md-nav__link">
+  <a href="#enable-https-ssl-support-on-nginx" class="md-nav__link">
     <span class="md-ellipsis">
-      Enable HTTPS SSL support on Nginx and RHEL 8
+      Enable HTTPS SSL support on Nginx
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
+  <a href="#generate-ssl-keys-and-certificates" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Step
+      Generate SSL Keys and Certificates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-https-and-http-ports-443-and-80" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open HTTPS and HTTP ports (443 and 80)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
     </span>
   </a>
   
@@ -974,20 +1021,29 @@
                 
                   
 
+  
+    <a href="https://github.com/Zephynyah/zeph-stigman/edit/master/docs/deployment/nginx.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
 
 <h1 id="installing-configuring-nginx">Installing &amp; Configuring NGINX</h1>
-<p>The aim of this article is to get you started with basic Nginx web-server installation using the dnf 
+<p>The aim of this section is to get you started with basic Nginx web-server installation using the dnf 
 install nginx command and configuration on RHEL 8 / CentOS 8. Nginx web server is an Apache alternative 
 with a capability to be also used as reverse proxy, load balancer, mail proxy and HTTP cache.</p>
 <hr />
-<h2 id="procedures">Procedures</h2>
-<ul>
-<li>Install Nginx on RHEL 8 / CentOS 8.</li>
-<li>Run Nginx encrypted with HTTPS.</li>
-<li>Create a self-signed SSL certificate for Nginx.</li>
-</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li><a href="#install-nginx">Install Nginx</a></li>
+<li><a href="#enable-https-ssl-support-on-nginx">Enable HTTPS SSL support on Nginx</a></li>
+<li><a href="#generate-ssl-keys-and-certificates">Generate SSL Keys and Certificates</a></li>
+<li><a href="#open-https-and-http-ports-443-and-80">Open HTTPS and HTTP ports (443 and 80)</a></li>
+</ol>
 <hr />
-<h2 id="install-nginx-on-rhel-78">Install nginx on RHEL 7/8</h2>
+<h2 id="install-nginx">Install Nginx</h2>
 <p>Install package nginx using the dnf command.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>nginx
 </code></pre></div></p>
@@ -1016,149 +1072,145 @@ with a capability to be also used as reverse proxy, load balancer, mail proxy an
 </div>
 <p>Access the Nginx welcome page.</p>
 <ul>
-<li>Open browser and navigate to <code>http://{{ server.ipaddress}}</code> URL.</li>
+<li>Open browser and navigate to <code>http://eh-stigman-1/</code> URL.</li>
 </ul>
-<p>Perform a further configuration of your host by editing the <code>/etc/nginx/nginx.conf</code> configuration file and server block: </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="go">server {</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="go">    listen       80 default_server;</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="go">    listen       [::]:80 default_server;</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="go">    server_name  _;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="go">    root         /usr/share/nginx/html;</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="gp">    # </span>Load<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>server<span class="w"> </span>block.
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="go">    include /etc/nginx/default.d/*.conf;</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="go">    location / {</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="go">    }</span>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="go">    error_page 404 /404.html;</span>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="go">        location = /40x.html {</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="go">    }</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
-<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="go">    error_page 500 502 503 504 /50x.html;</span>
-<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="go">        location = /50x.html {</span>
-<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="go">    }</span>
-<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="go">}</span>
+<hr />
+<h2 id="enable-https-ssl-support-on-nginx">Enable HTTPS SSL support on Nginx</h2>
+<p>Copy the nginx sever configuration file to <code>/etc/nginx/conf.d</code></p>
+<p>Execute the below commands to copy the config file:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/opt/deployment/nginx/etc/nginx/conf.d/stigman.nginx.conf<span class="w"> </span>/etc/nginx/conf.d
+</code></pre></div></p>
+<p><a href="../../_downloads/stigman.nginix.txt">View this file as plain text</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="gp"># </span>generated<span class="w"> </span><span class="m">2024</span>-06-05,<span class="w"> </span>Mozilla<span class="w"> </span>Guideline<span class="w"> </span>v5.7
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="go">server {</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="go">    listen                  443 ssl http2;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="go">    listen                  [::]:443 ssl http2;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="go">    server_name             eh-stigman-1;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="go">    ssl_certificate         /etc/pki/nginx/eh-stigman-1.crt;        </span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="go">    ssl_certificate_key     /etc/pki/nginx/private/eh-stigman-1.key;     </span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="go">    ssl_session_timeout     1d;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="go">    ssl_session_cache       shared:MozSSL:10m;  # about 40000 sessions</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="go">    ssl_session_tickets     off;</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="gp">    # </span>curl<span class="w"> </span>https://ssl-config.mozilla.org/ffdhe2048.txt<span class="w"> </span>&gt;<span class="w"> </span>/path/to/dhparam
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="gp">    # </span>ssl_dhparam<span class="w">             </span>/etc/pki/nginx/dhparam<span class="p">;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="gp">    # </span>intermediate<span class="w"> </span>configuration
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="go">    ssl_protocols TLSv1.2 TLSv1.3;</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="go">    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-CHACHA20-POLY1305;</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="go">    ssl_prefer_server_ciphers off;</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="gp">    # </span>HSTS<span class="w"> </span><span class="o">(</span>ngx_http_headers_module<span class="w"> </span>is<span class="w"> </span>required<span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="m">63072000</span><span class="w"> </span>seconds<span class="o">)</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="go">    add_header Strict-Transport-Security &quot;max-age=63072000&quot; always;</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="gp">    # </span>verify<span class="w"> </span>chain<span class="w"> </span>of<span class="w"> </span>trust<span class="w"> </span>of<span class="w"> </span>OCSP<span class="w"> </span>response<span class="w"> </span>using<span class="w"> </span>Root<span class="w"> </span>CA<span class="w"> </span>and<span class="w"> </span>Intermediate<span class="w"> </span>certs
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="gp">    # </span>ssl_trusted_certificate<span class="w"> </span>/etc/pki/nginx/ca-chain.cert.pem<span class="p">;</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="go">    location / {</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="go">        proxy_pass              http://eh-stigman-1:54000/;</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="go">    }</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a><span class="go">    location /auth/ {</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="go">        proxy_pass              http://eh-stigman-1:8080/auth/;</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="go">        proxy_set_header        Host               $host;</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a><span class="go">        proxy_set_header        X-Real-IP          $remote_addr;</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a><span class="go">        proxy_set_header        X-Forwarded-For    $proxy_add_x_forwarded_for;</span>
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a><span class="go">        proxy_set_header        X-Forwarded-Host   $host;</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a><span class="go">        proxy_set_header        X-Forwarded-Server $host;</span>
+<a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a><span class="go">        proxy_set_header        X-Forwarded-Port   $server_port;</span>
+<a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="go">        proxy_set_header        X-Forwarded-Proto  X$scheme;</span>
+<a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a><span class="go">        proxy_set_header        ssl-client-cert    $ssl_client_escaped_cert;</span>
+<a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a><span class="go">        proxy_buffer_size       128k;</span>
+<a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a><span class="go">        proxy_buffers           4 256k;</span>
+<a id="__codelineno-8-46" name="__codelineno-8-46" href="#__codelineno-8-46"></a><span class="go">        proxy_busy_buffers_size 256k;</span>
+<a id="__codelineno-8-47" name="__codelineno-8-47" href="#__codelineno-8-47"></a><span class="go">    }</span>
+<a id="__codelineno-8-48" name="__codelineno-8-48" href="#__codelineno-8-48"></a><span class="go">}</span>
 </code></pre></div>
+<h2 id="generate-ssl-keys-and-certificates">Generate SSL Keys and Certificates</h2>
+<p>Create a directory to hold the SSL certificate and the private key for the Nginx server.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The default Welcome to nginx web page location path is <code>/usr/share/nginx/html</code>.</p>
+<p>The cert will be created and placed in <code>/etc/pki/nginx/server.crt</code></p>
+<p>the key will be created and placed in <code>/etc/pki/nginx/private/server.key</code> </p>
 </div>
-<h2 id="enable-https-ssl-support-on-nginx-and-rhel-8">Enable HTTPS SSL support on Nginx and RHEL 8</h2>
-<p>Edit the /etc/nginx/nginx.conf configuration file and uncomment the entire settings for the TLS enabled server block:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/nginx.conf
-</code></pre></div>
-<div class="highlight"><span class="filename">Before</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="go">server {</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="go">    listen       443 ssl http2 default_server;</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="go">    listen       [::]:443 ssl http2 default_server;</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="go">    server_name  _;</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="go">    root         /usr/share/nginx/html;</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="go">    ssl_certificate &quot;/etc/pki/nginx/server.crt&quot;;</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="go">    ssl_certificate_key &quot;/etc/pki/nginx/private/server.key&quot;;</span>
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="go">    ssl_session_cache shared:SSL:1m;</span>
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="go">    ssl_session_timeout  10m;</span>
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="go">    ssl_ciphers PROFILE=SYSTEM;</span>
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="go">    ssl_prefer_server_ciphers on;</span>
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="gp">    # </span>Load<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>server<span class="w"> </span>block.
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="go">    include /etc/nginx/default.d/*.conf;</span>
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="go">    location / {</span>
-<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="go">    }</span>
-<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
-<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="go">    error_page 404 /404.html;</span>
-<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="go">        location = /40x.html {</span>
-<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="go">    }</span>
-<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>
-<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="go">    error_page 500 502 503 504 /50x.html;</span>
-<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="go">        location = /50x.html {</span>
-<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="go">    }</span>
-<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="go">}</span>
-</code></pre></div>
-<p>Replace the <code>location</code> block with the code below</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="go">    location /stigman/ {</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="go">        proxy_pass              http://{{ server.ipaddress }}:54000/;</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="go">    }        </span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="go">    location / {</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="go">        proxy_pass              http://{{ server.ipaddress }}:8080/;</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="go">        proxy_set_header        Host               $host;</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="go">        proxy_set_header        X-Real-IP          $remote_addr;</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="go">        proxy_set_header        X-Forwarded-For    $proxy_add_x_forwarded_for;</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="go">        proxy_set_header        X-Forwarded-Host   $host;</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="go">        proxy_set_header        X-Forwarded-Server $host;</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="go">        proxy_set_header        X-Forwarded-Port   $server_port;</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="go">        proxy_set_header        X-Forwarded-Proto  $scheme;</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="go">        proxy_set_header        ssl-client-cert    $ssl_client_escaped_cert;</span>
-<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="go">        proxy_buffer_size       128k;</span>
-<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="go">        proxy_buffers           4 256k;</span>
-<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="go">        proxy_busy_buffers_size 256k;</span>
-<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="go">    }</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">After</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="go">    server {</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="go">        listen       443 ssl http2 default_server;</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="go">        listen       [::]:443 ssl http2 default_server;</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="go">        server_name  _;</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="go">        root         /usr/share/nginx/html;</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="go">        ssl_certificate &quot;/etc/pki/nginx/server.crt&quot;;</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="go">        ssl_certificate_key &quot;/etc/pki/nginx/private/server.key&quot;;</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="go">        ssl_session_cache shared:SSL:1m;</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="go">        ssl_session_timeout  10m;</span>
-<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="go">        ssl_ciphers PROFILE=SYSTEM;</span>
-<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="go">        ssl_prefer_server_ciphers on;</span>
-<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>
-<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="gp">        # </span>Load<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>server<span class="w"> </span>block.
-<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="go">        include /etc/nginx/default.d/*.conf;</span>
-<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>
-<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="go">        location /stigman/ {</span>
-<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="go">            proxy_pass              http://{{ server.ipaddress }}:54000/;</span>
-<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="go">        }        </span>
-<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="go">        location / {</span>
-<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="go">            proxy_pass              http://{{ server.ipaddress }}:8080/;</span>
-<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="go">            proxy_set_header        Host               $host;</span>
-<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="go">            proxy_set_header        X-Real-IP          $remote_addr;</span>
-<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="go">            proxy_set_header        X-Forwarded-For    $proxy_add_x_forwarded_for;</span>
-<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="go">            proxy_set_header        X-Forwarded-Host   $host;</span>
-<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="go">            proxy_set_header        X-Forwarded-Server $host;</span>
-<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="go">            proxy_set_header        X-Forwarded-Port   $server_port;</span>
-<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a><span class="go">            proxy_set_header        X-Forwarded-Proto  $scheme;</span>
-<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a><span class="go">            proxy_set_header        ssl-client-cert    $ssl_client_escaped_cert;</span>
-<a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="go">            proxy_buffer_size       128k;</span>
-<a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="go">            proxy_buffers           4 256k;</span>
-<a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a><span class="go">            proxy_busy_buffers_size 256k;</span>
-<a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a><span class="go">        }</span>
-<a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a>
-<a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a><span class="go">        error_page 404 /404.html;</span>
-<a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a><span class="go">            location = /40x.html {</span>
-<a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a><span class="go">        }</span>
-<a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a>
-<a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a><span class="go">        error_page 500 502 503 504 /50x.html;</span>
-<a id="__codelineno-11-40" name="__codelineno-11-40" href="#__codelineno-11-40"></a><span class="go">            location = /50x.html {</span>
-<a id="__codelineno-11-41" name="__codelineno-11-41" href="#__codelineno-11-41"></a><span class="go">        }</span>
-<a id="__codelineno-11-42" name="__codelineno-11-42" href="#__codelineno-11-42"></a><span class="go">    }</span>
-</code></pre></div>
-<p>Create a directory to hold the SSL certificate and the private key for the Nginx server:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/pki/nginx/private/<span class="w"> </span>
+<p>Execute the below commands to create the directories:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/pki/nginx/private/<span class="w"> </span>
 </code></pre></div></p>
-<p>Generate a self-signed certificate and private key or upload the existing one to 
-the <code>/etc/pki/nginx/server.crt</code> and <code>/etc/pki/nginx/private/server.key</code> locations. </p>
-<p>The only required field when creating the self-signed certificate is <code>Common Name</code> (eg, your server's hostname):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>openssl<span class="w"> </span>req<span class="w"> </span>-newkey<span class="w"> </span>rsa:2048<span class="w"> </span>-nodes<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span>-keyout<span class="w"> </span>/etc/pki/nginx/private/server.key<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span>-x509<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span>-out<span class="w"> </span>/etc/pki/nginx/server.crt
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/pki
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>/opt/pki
+</code></pre></div>
+<p>Execute the below command to generate CA's private key and self-signed certificate
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="w">  </span>openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span>-nodes<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span>-keyout<span class="w"> </span>ca-key.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span>-out<span class="w"> </span>ca-cert.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span>-subj<span class="w"> </span><span class="s2">&quot;/C=US/ST=Connecticut/L=East Hartford/O=Alice Ltd/OU=Finance/CN=Alice Ltd Certificate Authority/emailAddress=alice.ca@support.com&quot;</span>
 </code></pre></div></p>
-<p>Open HTTPS port 443 on the firewalld firewall daemon:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--permanent<span class="w"> </span>--add-service<span class="o">=</span>https
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>firewall-cmd<span class="w"> </span>--reload
+<p>Execute the below command to  create the CA's self-signed certificate:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>openssl<span class="w"> </span>x509<span class="w"> </span>-in<span class="w"> </span>ca-cert.pem<span class="w"> </span>-noout<span class="w"> </span>-text
 </code></pre></div></p>
-<p>Reload the Nginx configuration:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+<p>Execute the below command to generate web server's private key and certificate signing request (CSR)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>openssl<span class="w"> </span>req<span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span>-keyout<span class="w"> </span>server-key.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span>-out<span class="w"> </span>server-req.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span>-subj<span class="w"> </span><span class="s2">&quot;/C=US/ST=Connecticut/L=East Hartford/O=Alice Ltd/OU=Finance/CN=*.staging.local/emailAddress=alice.finance@support.com&quot;</span>
+</code></pre></div></p>
+<p>Execute the below command to create the config file:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Edit the DNS, IP, and wildcard information below before running the command.</p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;subjectAltName=DNS:*.monofinance.net,DNS:*.monofinance.com,DNS:*.monofinance.org,IP:0.0.0.0&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w"> </span>&gt;<span class="w"> </span>server-ext.cnf
+</code></pre></div>
+<p>Execute the below command to use CA's private key to sign web server's CSR and get back the signed certificate
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>openssl<span class="w"> </span>x509<span class="w"> </span>-req<span class="w"> </span>-in<span class="w"> </span>server-req.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span>-CA<span class="w"> </span>ca-cert.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span>-CAkey<span class="w"> </span>ca-key.pem<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span>-CAcreateserial<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span>-out<span class="w"> </span>server-cert.pem<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">    </span>-extfile<span class="w"> </span>server-ext.cnf
+</code></pre></div></p>
+<p>Execute the below command below to show the Server's signed certificate:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>openssl<span class="w"> </span>x509<span class="w"> </span>-in<span class="w"> </span>server-cert.pem<span class="w"> </span>-noout<span class="w"> </span>-text
+</code></pre></div></p>
+<p>Execute the below command below to verify Server and CA certificates:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>openssl<span class="w"> </span>verify<span class="w"> </span>-CAfile<span class="w"> </span>ca-cert.pem<span class="w"> </span>server-cert.pem
+</code></pre></div></p>
+<p>Execute the below commands below to copy the file to the appropriate directories:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>cp<span class="w"> </span>server-cert.pem<span class="w"> </span>/etc/pki/nginx/server.crt
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>cp<span class="w"> </span>server-cert.key<span class="w">  </span>/etc/pki/nginx/private/server.key
+</code></pre></div></p>
+<p>Reload the Nginx configuration to pick load the new certs:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx.service
+</code></pre></div></p>
+<hr />
+<h2 id="open-https-and-http-ports-443-and-80">Open HTTPS and HTTP ports (443 and 80)</h2>
+<p>Execute the below command below to open the port:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--permanent<span class="w"> </span>--add-service<span class="o">=</span>https
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--permanent<span class="w"> </span>--add-service<span class="o">=</span>http
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>firewall-cmd<span class="w"> </span>--reload
 </code></pre></div></p>
 <p>Access the Nginx welcome page. All should now be ready to access Nginx from a remote host. 
-Open the browser and paste the URL or navigate to <a href="https://{{ server.ipaddress }}">https://{{ server.ipaddress }}</a>.</p>
-<h2 id="next-step">Next Step</h2>
-<p><a href="../deploy/">We will Configure Applications to use Proxy</a></p>
+Open the browser and paste the URL or navigate to <a href="{{ no such element: dict object['ssl'] }}">{{ no such element: dict object['ssl'] }}</a>.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<div class="admonition success annotate">
+<p class="admonition-title">Summary</p>
+<p>In these procedures, on a RHEL 7/8 distributions, you have:</p>
+<ul>
+<li>Installed Nginx</li>
+<li>Enabled HTTPS SSL support on Nginx</li>
+<li>Generated SSL Keys and Certificates</li>
+<li>Opened HTTPS and HTTP ports (443 and 80)</li>
+</ul>
+</div>
 
 
 
@@ -1293,7 +1345,7 @@ Open the browser and paste the URL or navigate to <a href="https://{{ server.ipa
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.action.edit", "content.code.annotation", "content.code.copy", "content.tabs.link", "content.tooltips", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.path"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.1.1"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.action.edit", "content.code.annotation", "content.code.copy", "content.tabs.link", "content.tooltips", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.path"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
@@ -1301,5 +1353,7 @@ Open the browser and paste the URL or navigate to <a href="https://{{ server.ipa
         <script src="../../javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
