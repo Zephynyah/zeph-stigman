@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "*"
+mkdocs-material = "*"
+pillow = "*"
+cairosvg = "*"
+mkdocs-material-extensions = "*"
+qrcode = "*"
+mkdocs-with-pdf = "*"
+pymdown-extensions = "*"
+
+[dev-packages]
+pylint = "*"
+wheel = "*"
+
+[requires]
+python_version = "3.12"

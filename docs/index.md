@@ -19,38 +19,42 @@ For full documentation, visit [STIG Manager documentation](https://stig-manager.
 
 ## Project layout
     .
+    ├── CHANGELOG
+    ├── CONTRIBUTING.md
+    ├── LICENSE
+    ├── Pipfile
+    ├── Pipfile.lock
     ├── README.md
+    ├── deployment
+    │   └── nginx
     ├── docs
-    │   ├── about.md
-    │   ├── assets
-    │   ├── backups
-    │   ├── deployment
-    │   ├── extra
-    │   ├── index.md
-    │   ├── introduction
-    │   ├── stylesheets
-    │   └── usage
+    │   ├── _downloads
+    │   ├── about
+    │   ├── appendix
+    │   ├── assets
+    │   ├── deployment
+    │   ├── index.md
+    │   ├── javascripts
+    │   └── stylesheets
     ├── extra_sass
-    │   └── style.css.scss
+    │   └── style.css.scss
     ├── mkdocs.yml
-    ├── opt
-    │   └── deployment
     ├── pdf_event_hook
-    │   ├── __init__.py
-    │   └── __pycache__
-    └── site
-        ├── 404.html
-        ├── about.html
-        ├── assets
-        ├── backups
-        ├── deployment
-        ├── extra
-        ├── index.html
-        ├── introduction
-        ├── pdf
-        ├── search
-        ├── sitemap.xml
-        ├── sitemap.xml.gz
-        ├── stylesheets
-        └── usage
-
+    │   ├── __init__.py
+    │   └── __pycache__
+    ├── site
+    │   ├── 404.html
+    │   ├── _downloads
+    │   ├── about
+    │   ├── appendix
+    │   ├── assets
+    │   ├── deployment
+    │   ├── index.html
+    │   ├── javascripts
+    │   ├── pdf
+    │   ├── search
+    │   ├── sitemap.xml
+    │   ├── sitemap.xml.gz
+    │   └── stylesheets
+    └── snippets
+        └── definitions.md

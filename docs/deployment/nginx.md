@@ -227,7 +227,7 @@ firewall-cmd --reload
 ```
 
 Access the Nginx welcome page. All should now be ready to access Nginx from a remote host. 
-Open the browser and paste the URL or navigate to [{{ server.ssl }}]({{ server.ssl }}).
+Open the browser and paste the URL or navigate to [{{ server.https }}]({{ server.https }}).
 
 
 ---

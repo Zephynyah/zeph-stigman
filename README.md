@@ -21,3 +21,16 @@ Please read our [CONTRIBUTING](CONTRIBUTING.md) document. It explains:
 - How you can get involved in the project and contribute
 - How to set up a development environment to work with the project's code 
 
+
+## Fix live reload
+``` sh
+pip3 install livereload
+```
+
+# Pluins
+
+``` sh
+pip install mkdocs-material mkdocs-material-extensions --upgrade
+pip install pillow cairosvg --upgrade
+
+```

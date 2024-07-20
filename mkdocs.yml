@@ -28,8 +28,11 @@ nav:
   - Appendix:
     - appendix/index.md
 theme:
+  # name: readthedocs #material
   name: material
+  language: en
   # custom_dir: material/overrides
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/git-alt
   features:
@@ -49,7 +52,7 @@ theme:
     - navigation.indexes
     - navigation.footer
     - navigation.path
-  language: en
+
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -70,11 +73,9 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
   font:
-      text: Roboto
-      code: Roboto Mono
-    # favicon: assets/favicon.png
-    # icon:
-    #   logo: logo
+    text: Roboto
+    code: Roboto Mono
+
 plugins:
   - social
   - search
@@ -82,17 +83,16 @@ plugins:
   - extra-sass
   - macros:
       include_dir: snippets
-  # - with-pdf:
-  #     author: Jason Hickey
-  #     # copyright: Copyright &copy; 2024 Jason Hickey.
-  #     cover: true
-  #     back_cover: true
-  #     cover_title: GSC STIG Manager
-  #     cover_subtitle: Installation Documentation
-  #     cover_logo: assets/images/banner.png
-  #     heading_shift: false
-  #     # exclude_pages:
-  #         # - 'usage/'
+  - with-pdf:
+      toc_level: 1
+      author: Government Security Compliance (GSC)
+      copyright: Copyright &copy; 2024 GSC.
+      cover: true
+    #   back_cover: true
+      cover_title: GSC STIG Manager
+      cover_subtitle: Installation Documentation
+      cover_logo: assets/images/Pratt_&_Whitney_Logo.jpg
+      heading_shift: false
 
 markdown_extensions:
   - md_in_html
