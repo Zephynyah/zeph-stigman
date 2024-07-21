@@ -84,15 +84,40 @@ plugins:
   - macros:
       include_dir: snippets
   - with-pdf:
-      toc_level: 1
-      author: Government Security Compliance (GSC)
-      copyright: Copyright &copy; 2024 GSC.
+      author: ZephyNyah
+      copyright: ZephyNyah &copy; 2024 GSC.
+      #
       cover: true
-    #   back_cover: true
+      #back_cover: true
       cover_title: GSC STIG Manager
-      cover_subtitle: Installation Documentation
-      cover_logo: assets/images/Pratt_&_Whitney_Logo.jpg
+      cover_subtitle: Installation Guide
+      cover_logo: assets/images/banner.png
+      #custom_template_path: TEMPLATES PATH
+      #
+      #toc_title: TOC TITLE TEXT
       heading_shift: false
+      toc_level: 1
+      ordered_chapter_level: 2
+      #excludes_children:
+      #    - 'release-notes/:upgrading'
+      #    - 'release-notes/:changelog'
+      #
+      #exclude_pages:
+      #    - 'bugs/'
+      #    - 'appendix/contribute/'
+      #convert_iframe:
+      #    - src: IFRAME SRC
+      #      img: POSTER IMAGE URL
+      #      text: ALTERNATE TEXT
+      #    - src: ...
+      #two_columns_level: 3
+      #
+      #output_path: any-place/document.pdf
+      # enabled_if_env: ENABLE_PDF_EXPORT
+      #
+      #debug_html: true
+      #show_anchors: true
+      #verbose: true
 
 markdown_extensions:
   - md_in_html
